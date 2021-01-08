@@ -13,6 +13,9 @@ export default function promiseMiddleware({ dispatch }) {
     };
 }
 function process(dispatch, next, action) {
+    if (typeof action === 'function') {
+        return action(dispatch, getState);
+    }
     if (!isFSA(action)) {
         return isPromise(action) ? action.then(dispatch) : next(action);
     }
