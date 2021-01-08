@@ -6,8 +6,8 @@
 #### 我们的中间件是在redux-promise 和 redux-thunk这两个中间件的基础上进行开发，本中间件是对以上两个中间件的合并和增强，具体来说，只需要引入本中间件，就可以dispatch各种形式的action，包括函数形式、promise对象、对象中的payload是promise对象，以及由上面**三种action组成的数组，以及嵌套数组**。 也就是说，本中间件可以方便我们处理以各种形式呈现的action对象。
 # Usage:
 
-> npm i redux-any --save
-> import anyMiddleWare from 'redux-any'
-> const store = createStore(reducer, applyMiddleware(anyMiddleWare))
+- > npm i redux-any --save
+- > import anyMiddleWare from 'redux-any'
+- > const store = createStore(reducer, applyMiddleware(anyMiddleWare))
 
 
