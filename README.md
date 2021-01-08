@@ -1,7 +1,6 @@
-# redux-promise-array
-a middleware for processing promise action in the form of single or array
+# redux-any
+# a middleware for processing action like function,promise,and array
+Our middleware is based on redux-promise and redux-thunk .Our middlewrae enhances and combines these two middlewares so that it can processes many kinds of actions like function,promise,and array
+# Usage:
 
-this middleware is based on redux-promise.This middlewrae enhances the redux-promise so that it can process array of promise action.
-
-Usage:
-npm i redux-promise-array 
+npm i redux-any
