@@ -1,6 +1,6 @@
 {
     "name": "redux-any",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "description": "Our middleware is based on redux-promise and redux-thunk .Our middlewrae enhances and combines these two middlewares so that it can processes many kinds of actions like function,promise,and array # Usage:",
     "main": "lib/index.js",
     "directories": {
