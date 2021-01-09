@@ -14,9 +14,9 @@
  import {  createStore, applyMiddleware,compose} from 'redux';
  import reducer from './store';
 
-const store = createStore(reducer, compose(
+ const store = createStore(reducer, compose(
     applyMiddleware(anyMiddleware),
-))
+ ))
 
 ```
 # The actionCreator that we support:
