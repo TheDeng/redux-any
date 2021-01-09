@@ -1,7 +1,7 @@
 # redux-any
 ## 一个redux中间件
 #### a middleware for processing action like function,promise,and array or nested array
-#### 用来处理格式各样的action，包括函数类型，promise类型，数组类型或者嵌套数组类型。
+#### 用来处理各种类型的action，包括函数类型，promise类型，数组类型或者嵌套数组类型。
 ```javascript
 1.function 
 2.Promise
