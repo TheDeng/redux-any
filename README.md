@@ -7,7 +7,20 @@
 # Usage:
 
 - > npm i redux-any --save
-- > import anyMiddleWare from 'redux-any'
-- > const store = createStore(reducer, applyMiddleware(anyMiddleWare))
+``` javascript
+ import anyMiddleWare from 'redux-any'
+ const store = createStore(reducer, applyMiddleware(anyMiddleWare))
+```
+# The actionCreator that we support:
+``` javascript
+// Function
+export const getFunctionAction = () => {
+    return dispatch => {
+        setTimeout(() => {
+            dispatch({ type: ADD })
+        }, 1000);
+    }
+}
+```
 
 
