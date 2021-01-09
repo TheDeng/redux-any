@@ -54,7 +54,7 @@ export const getFunctionAction = () => {
 export const addBook = async ({ name }) => {
     //_addBook({name}) 是一个axios接口
     const res = await _addBook({ name })
-    return [{ type: 'ADD' }, getBookList()]
+    return { type: 'ADD'，payload:res.data.data }
 }
 ```
 
