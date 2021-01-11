@@ -66,5 +66,10 @@ export const payloadAction = async () => {
     }
 }
 ```
-
+```javascript 
+//action array 支持数组形式的action，
+export const actionArray = () => {
+    return [addBook(),payloadAction(),{type:'ADD,payload:1},getFunctionAction()]
+}
+```
 
