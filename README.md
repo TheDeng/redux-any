@@ -40,7 +40,7 @@ promise对象
 ```
 # The actionCreator that we support:
 ``` javascript
-// Function
+// Function  支持异步函数
 export const getFunctionAction = () => {
     return dispatch => {
         setTimeout(() => {
@@ -50,11 +50,20 @@ export const getFunctionAction = () => {
 }
 ```
 ```javascript
-//Promise Object
+//Promise Object 支持Promise对象
 export const addBook = async ({ name }) => {
     //_addBook({name}) 是一个axios接口
     const res = await _addBook({ name })
     return { type: 'ADD'，payload:res.data.data }
+}
+```
+```javascript 
+//aciton.payload=Promise Object  支持对象的payload属性为Promise对象
+export const payloadAction = async () => {
+    return {
+        type: 'ADD',
+        payload: await addBook()
+    }
 }
 ```
 
