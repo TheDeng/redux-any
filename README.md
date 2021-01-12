@@ -38,7 +38,7 @@ promise对象
  ))
 
 ```
-# The actionCreator that we support:
+# The actionCreators that we support:
 ``` javascript
 // Function  支持异步函数
 export const getFunctionAction = () => {
