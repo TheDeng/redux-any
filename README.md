@@ -1,13 +1,14 @@
 # redux-any
 ## 一个redux中间件
-#### A middleware for processing action like function,promise,and array or nested array
-#### 用来处理各种类型的action，包括函数类型，promise类型，数组类型或者嵌套数组类型。
+#### A middleware for processing action like plain object,function,promise,and array or nested array
+#### 用来处理各种类型的action，包括普通对象,函数类型，promise类型，数组类型或者嵌套数组类型。
 ```javascript
-1.function 
-2.Promise
-3.action.payload=promise
-4.action array
-5.nested array of action
+1.plain object
+2.function 
+3.Promise
+4.action.payload=promise
+5.action array
+6.nested array of action
 ```
 #### Our middleware is based on redux-promise and redux-thunk .Our middlewrae enhances and combines these two middlewares so that it can processes many kinds of actions like function,promise,and array,in addition,we finish the nested array iteration
 ```javascript
